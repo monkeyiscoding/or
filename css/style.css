@@ -129,6 +129,7 @@ body {
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 25px;
+    border: none;
   }
 
   .icon-right {
@@ -140,6 +141,7 @@ body {
     width: 80%;
     margin-top: 10px;
     visibility: hidden;
+    border-radius: 20px;
     background-color: black;
     box-shadow: 0px 0px 10px #717171;
   }
@@ -157,8 +159,8 @@ body {
     text-align: center;
     margin-top: 85px;
     width: 80%;
-		margin-left: 10%;
-		margin-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
     justify-content: center;
   }
 
@@ -296,11 +298,127 @@ body {
     margin-top: 40px;
   }
 
-  .details-div {
-    height: 300px;
-    background-color: #161414;
-    margin-top: 100px;
+	.details-div {
+
+		background-color: #161414;
+		margin-top: 100px;
+		padding-left: 200px;
+		padding-right: 200px;
+		margin-left: 50px;
+		text-align: center;
+		padding-top: 20px;
+		margin-right: 50px;
+		margin-bottom: 50px;
+    padding-bottom: 100px;
+	}
+
+	.details-icon {
+		padding: 20px;
+		border-radius: 10px;
+		margin-top: 30px;
+		margin-left: 0px;
+		background-color: #3D3D3D;
+	}
+
+	.details-title {
+		font-size: 25px;
+		color: white;
+		margin-top: 25px;
+	}
+
+	.border-div{
+		border-style: none;
+		border-top: 5px dotted grey;
+		height: 10px;
+
+	}
+
+
+  .about-title {
+    font-size: 22px;
+    color: white;
+    margin-top: 25px;
   }
+
+  .about-des {
+    font-size: 22px;
+    color: #747474;
+    margin-top: 5px;
+
+  }
+
+  .subscribe-field{
+    border: 2px solid grey;
+    background-color: black;
+    margin-top: 10px;
+    color: white;
+    padding-left: 5px;
+  }
+  .about-section-4{
+    text-align: center;
+  }
+
+
+  .contact-dialog{
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    padding: 200px;
+    justify-content: center;
+    align-items: center;
+    
+
+  }
+
+  .dialog-content{
+    width: 100%;
+    background-color: #161414;
+    padding-bottom: 100px;
+    padding-left: 50px;
+
+  }
+
+  .dilaog-field{ 
+    background-color: #1C1C1C;
+    border: 1px solid #707070;
+    color: white;
+    height: 60px;
+    width: 100%;
+    margin: 0px ;
+    margin-right: 80px;
+    padding-left: 60px;
+    font-size: 25px;
+    font-family: Bahnschrift;
+  }
+
+  .input-div{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+  }
+
+  .field-icon{
+    color: var(--primary-color);
+    position: absolute;
+    margin-left: 15px;
+  }
+
+  .dialog-send-button{
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-color);
+    font-size: 40px;
+    font-family: Bahnschrift;
+  }
+
+  .button-div{
+    padding: 30px 80px 0px 0px;
+  }
+
 }
 
 @media (min-width: 1200px) {
@@ -414,9 +532,12 @@ body {
   .logo-card {
     height: 600px;
     width: 60%;
+    border-radius: 20px;
     margin-top: 10px;
+
+    border: 3px solid var(--primary-color);
     background-color: black;
-    box-shadow: 0px 0px 10px #717171;
+    box-shadow: 0px 0px 400px #717171;
   }
 
   .service-tab {
@@ -565,10 +686,134 @@ body {
   }
 
   .details-div {
-    height: 300px;
+    height: 600px;
     background-color: #161414;
     margin-top: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-left: 50px;
+    text-align: center;
+    padding-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 50px;
   }
+
+  .details-icon {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 0px;
+    background-color: #3D3D3D;
+  }
+
+  .details-title {
+    font-size: 25px;
+    color: white;
+    margin-top: 25px;
+  }
+
+	.border-div{
+		border-style: none;
+		border-top: 5px dotted grey;
+		height: 10px;
+
+	}
+
+  .about-title {
+    font-size: 22px;
+    color: white;
+    margin-top: 25px;
+  }
+
+  .about-des {
+    font-size: 22px;
+    color: #747474;
+    margin-top: 5px;
+
+  }
+
+  .subscribe-field{
+    border: 2px solid grey;
+    background-color: black;
+    margin-top: 10px;
+    color: white;
+    padding-left: 10px;
+  }
+
+  .about-div{
+    text-align: center;
+    margin-left: 80px;
+    justify-content: center;
+  }
+
+  .about-section{
+    margin-left: 50px;
+    text-align: left;
+  }
+  .about-section-4{
+    margin-left: 50px;
+    text-align: left;
+  }
+
+  .contact-dialog{
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    padding: 200px;
+    justify-content: center;
+    align-items: center;
+    
+
+  }
+
+  .dialog-content{
+    width: 100%;
+    background-color: #161414;
+    padding-bottom: 100px;
+    padding-left: 50px;
+
+  }
+
+  .dilaog-field{ 
+    background-color: #1C1C1C;
+    border: 1px solid #707070;
+    color: white;
+    height: 60px;
+    width: 100%;
+    margin: 0px;
+    padding-left: 60px;
+    font-size: 25px;
+    font-family: Bahnschrift;
+  }
+
+  .input-div{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+  }
+
+  .field-icon{
+    color: var(--primary-color);
+    position: absolute;
+    margin-left: 15px;
+  }
+
+  .dialog-send-button{
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-color);
+    font-size: 40px;
+    font-family: Bahnschrift;
+  }
+
+  .button-div{
+    padding: 30px 80px 0px 20px;
+  }
+
 }
 
 /* Objects */
